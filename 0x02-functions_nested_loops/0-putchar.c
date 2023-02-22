@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
+
 /**
  * File: 0-putchar.c
  * name : peter kimbeghi
