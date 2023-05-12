@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 char *create_buffer(char *file);
 void close_file(int fd);
@@ -60,7 +62,7 @@ int main(int argc, char *argv[])
 {
 	int from, to, r, w;
 	char *buffer;
-2
+
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
